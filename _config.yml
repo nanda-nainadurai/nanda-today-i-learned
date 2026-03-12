@@ -1,0 +1,14 @@
+title: "TIL"
+description: "Things I learned, one day at a time"
+url: ""
+baseurl: "/conductor-playground-2"
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+
+theme: null
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitkeep
