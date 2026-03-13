@@ -1,7 +1,7 @@
 title: "Nanda's TIL"
 description: "Things I learned, one day at a time"
 url: ""
-baseurl: "/nandas-til"
+baseurl: "/nanda-today-i-learned"
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
 
