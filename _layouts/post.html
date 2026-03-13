@@ -15,3 +15,26 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+<div class="lightbox-overlay" id="lightbox">
+  <img src="" alt="">
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var overlay = document.getElementById('lightbox');
+    var overlayImg = overlay.querySelector('img');
+
+    document.querySelectorAll('.content img').forEach(function(img) {
+      img.addEventListener('click', function() {
+        overlayImg.src = this.src;
+        overlayImg.alt = this.alt;
+        overlay.classList.add('active');
+      });
+    });
+
+    overlay.addEventListener('click', function() {
+      overlay.classList.remove('active');
+    });
+  });
+</script>

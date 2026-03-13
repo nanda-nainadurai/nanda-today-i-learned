@@ -47,4 +47,10 @@ article time { color: var(--dim); font-size: 0.85rem; }
 .content pre { background: var(--code-bg); padding: 1rem; border-radius: 6px; overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border); }
 .content pre code { background: none; padding: 0; }
 .content blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; color: var(--dim); margin-bottom: 1rem; }
-.content img { max-width: 80%; height: auto; border: 1px solid var(--border); border-radius: 6px; margin: 1rem 0; display: block; }
+.content img { max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 6px; margin: 1rem 0; display: block; cursor: zoom-in; transition: opacity 0.2s; }
+.content img:hover { opacity: 0.9; }
+
+/* Lightbox overlay */
+.lightbox-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; cursor: zoom-out; justify-content: center; align-items: center; }
+.lightbox-overlay.active { display: flex; }
+.lightbox-overlay img { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 4px 30px rgba(0,0,0,0.5); }
